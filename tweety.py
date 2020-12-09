@@ -78,18 +78,8 @@ def main():
 
 def getDigit(string):
     string = string.lower()
-    if string == "bir":
-        return 1
-    elif string == "iki":
-        return 2
-    elif string == "üç":
-        return 3
-    elif string == "dört":
-        return 4
-    elif string == "beş":
-        return 5
-    elif string == "altı":
-        return 6
+    numbers = ["bir", "iki", "üç", "dört", "beş", "altı"]
+    return numbers.index(string) + 1
 
 if __name__ == "__main__":
     while True:
